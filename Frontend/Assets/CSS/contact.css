@@ -1,0 +1,138 @@
+.links-top{ display: flex;}
+
+span{
+    color: var(--c-bonus);
+}
+
+.wrapper-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:88.8vh;
+    background: var(--c-second);
+}
+
+.container-contact{
+    display: flex;
+    padding:6rem;
+    background: url(../Images/brown-space.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Left side of the contact section */
+
+.container-contact-left, .container-contact-right{
+    flex:1;
+}
+
+.container-contact-left{
+    padding-right: 3rem;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+
+.container-contact-left span{
+    color: var(--c-bonus);
+}
+
+.container-contact-left h1{
+    padding:2rem 0rem 4rem 0;
+}
+
+.container-contact-right{
+    position: relative;
+    padding:2rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+}
+
+.contact-form{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+
+/* Form progression elements */
+
+#form-progression{
+    position: absolute;
+    top:-2rem;
+    right:-2rem;
+    background-color: var(--c-main);
+    color: white;
+    padding:1.15rem;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+}
+
+#form-progression-percent{ color:white; }
+
+/* Form input fields & submit button */
+
+.form-input:focus{ outline: none; }
+label{ margin-bottom: 0.5rem; }
+textarea{ resize: none; }
+input, textarea{
+    margin-bottom: 1rem;
+    padding:0.5rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.contact-btn{
+    background: #af927f;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    width:100px;
+    padding:0.5rem;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 990px){
+    .wrapper-contact{
+        height: auto;
+        padding:1.5rem;
+    }
+
+    .container-contact{
+        flex-direction: column;
+        padding:3rem;
+    }
+
+    .container-contact-left{
+        align-items: center;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width:576px){
+    .container-contact{
+        flex-direction: column;
+        padding:1.5rem;
+    } 
+    .container-contact-right{
+        padding:1rem;
+    }
+    #form-progression{
+        font-size: 15px;
+        padding:0.75rem;
+    }
+}
