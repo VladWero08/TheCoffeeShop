@@ -80,7 +80,6 @@ function fetchCoffees(){
                 })
 
                 coffee_recipe.appendChild(edit_btn);
-
                 coffee_list.appendChild(coffee_recipe);
             }
         })

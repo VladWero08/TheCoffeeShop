@@ -35,7 +35,7 @@ function calculatePercent(){
 
 }
 
-for( let i = 0; i < input_fields.length; i++){
-    // for each key stroke, reevaluate the state of the input fields
-    input_fields[i].addEventListener("keydown", calculatePercent);
-}
+// for( let i = 0; i < input_fields.length; i++){
+//     // for each key stroke, reevaluate the state of the input fields
+//     input_fields[i].addEventListener("keydown", calculatePercent);
+// }
